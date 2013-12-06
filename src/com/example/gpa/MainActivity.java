@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-	Button addSemester, viewClasses, viewGPA;
+	Button calculateGPA;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	}
 	
 	public void initialize() {
-		//addSemester = (Button) findViewById(R.id.add_semester);
-		
+		calculateGPA = (Button) findViewById(R.id.calculate);
 	}
 
 }

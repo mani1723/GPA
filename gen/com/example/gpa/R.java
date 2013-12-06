@@ -25,8 +25,8 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f080002;
-        public static final int addClass=0x7f080001;
-        public static final int addSemester=0x7f080000;
+        public static final int calculate=0x7f080001;
+        public static final int class1=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -43,10 +43,10 @@ public final class R {
         public static final int add_semester=0x7f050005;
         public static final int app_name=0x7f050000;
         public static final int back=0x7f05000d;
+        public static final int calculate=0x7f050002;
         public static final int cancel=0x7f050008;
         public static final int class_name=0x7f050006;
         public static final int courses=0x7f05000c;
-        public static final int hello=0x7f050002;
         public static final int hours=0x7f050007;
         public static final int new_course=0x7f05000b;
         public static final int submit=0x7f050009;
