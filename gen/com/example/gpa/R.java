@@ -8,6 +8,9 @@
 package com.example.gpa;
 
 public final class R {
+    public static final class array {
+        public static final int menu=0x7f040000;
+    }
     public static final class attr {
     }
     public static final class dimen {
@@ -17,51 +20,74 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int Add=0x7f08000f;
-        public static final int Cancel=0x7f08000e;
-        public static final int action_settings=0x7f080010;
-        public static final int addClass=0x7f080001;
-        public static final int addCourseButtons=0x7f08000d;
-        public static final int calculate=0x7f080003;
-        public static final int classGrade=0x7f080008;
-        public static final int classGradeTextField=0x7f080009;
-        public static final int classHours=0x7f08000b;
-        public static final int classHoursTextField=0x7f08000c;
-        public static final int className=0x7f080005;
-        public static final int classNameTextField=0x7f080006;
-        public static final int gpaCalculator=0x7f080000;
-        public static final int gradeLayout=0x7f080007;
-        public static final int hoursLayout=0x7f08000a;
-        public static final int nameLayout=0x7f080004;
-        public static final int viewClasses=0x7f080002;
+        public static final int Add=0x7f0a000f;
+        public static final int Cancel=0x7f0a000e;
+        public static final int action_settings=0x7f0a0015;
+        public static final int addClass=0x7f0a0001;
+        public static final int addCourseButtons=0x7f0a000d;
+        public static final int add_class=0x7f0a0013;
+        public static final int back=0x7f0a0014;
+        public static final int calculate=0x7f0a0003;
+        public static final int classGrade=0x7f0a0008;
+        public static final int classGradeTextField=0x7f0a0009;
+        public static final int classHours=0x7f0a000b;
+        public static final int classHoursTextField=0x7f0a000c;
+        public static final int className=0x7f0a0005;
+        public static final int classNameTextField=0x7f0a0006;
+        public static final int gpaCalculator=0x7f0a0000;
+        public static final int gradeLayout=0x7f0a0007;
+        public static final int hoursLayout=0x7f0a000a;
+        public static final int linearLayout1=0x7f0a0010;
+        public static final int linearLayout2=0x7f0a0011;
+        public static final int nameLayout=0x7f0a0004;
+        public static final int textView1=0x7f0a0012;
+        public static final int viewClasses=0x7f0a0002;
+    }
+    public static final class integer {
+        public static final int ASSIGNMENT_TYPE_CREATE=0x7f060000;
+        public static final int ASSIGNMENT_TYPE_DELETE=0x7f060002;
+        public static final int ASSIGNMENT_TYPE_MODIFY=0x7f060001;
+        public static final int COURSE_ADD=0x7f060003;
+        public static final int COURSE_DELETE=0x7f060005;
+        public static final int COURSE_MODIFY=0x7f060004;
+        public static final int GRADE_ADD=0x7f060006;
+        public static final int GRADE_DELETE=0x7f060008;
+        public static final int GRADE_MODIFY=0x7f060007;
+        public static final int SCALE_SETUP=0x7f060009;
+        public static final int STYLE_PERCENTAGE=0x7f06000a;
+        public static final int STYLE_POINTS=0x7f06000b;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int add_class=0x7f030001;
+        public static final int view_class=0x7f030002;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050002;
-        public static final int add=0x7f05000b;
-        public static final int add_class=0x7f050004;
-        public static final int app_name=0x7f050000;
-        public static final int calculate=0x7f050003;
-        public static final int cancel=0x7f05000a;
-        public static final int class_grade=0x7f050006;
-        public static final int class_hours=0x7f050007;
-        public static final int class_name=0x7f050008;
-        public static final int courses=0x7f050009;
-        public static final int gpa_calculator=0x7f050001;
-        public static final int view_classes=0x7f050005;
+        public static final int action_settings=0x7f070002;
+        public static final int add=0x7f07000b;
+        public static final int add_class=0x7f070004;
+        public static final int app_name=0x7f070000;
+        public static final int back=0x7f07000c;
+        public static final int calculate=0x7f070003;
+        public static final int cancel=0x7f07000a;
+        public static final int class_grade=0x7f070006;
+        public static final int class_hours=0x7f070007;
+        public static final int class_name=0x7f070008;
+        public static final int classes=0x7f07000d;
+        public static final int courses=0x7f070009;
+        public static final int gpa_calculator=0x7f070001;
+        public static final int list=0x7f07000e;
+        public static final int view_classes=0x7f070005;
     }
     public static final class style {
         /** 
@@ -85,10 +111,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f080001;
     }
 }

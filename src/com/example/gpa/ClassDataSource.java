@@ -109,7 +109,7 @@ public class ClassDataSource {
 				+ " = " + id, null);
 	}
 
-	public List<Class> getAllClasss() {
+	public List<Class> getAllClasses() {
 		List<Class> classes = new ArrayList<Class>();
 		Cursor cursor = db.query(DatabaseHandler.classesTable, columns,
 				null, null, null, null,

@@ -28,7 +28,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 				startActivity(i);
 				break;
 			case R.id.viewClasses:
-				i = new Intent(this, ClassListActivity.class);
+				i = new Intent(this, ViewClassesActivity.class);
 				startActivity(i);
 				break;
 			case R.id.calculate:
