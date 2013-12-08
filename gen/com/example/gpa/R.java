@@ -24,11 +24,23 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080004;
+        public static final int Add=0x7f08000f;
+        public static final int Cancel=0x7f08000e;
+        public static final int action_settings=0x7f080010;
+        public static final int addClass=0x7f080001;
+        public static final int addCourseButtons=0x7f08000d;
         public static final int calculate=0x7f080003;
-        public static final int class1=0x7f080001;
-        public static final int grade1=0x7f080002;
-        public static final int row1=0x7f080000;
+        public static final int classGrade=0x7f080008;
+        public static final int classGradeTextField=0x7f080009;
+        public static final int classHours=0x7f08000b;
+        public static final int classHoursTextField=0x7f08000c;
+        public static final int className=0x7f080005;
+        public static final int classNameTextField=0x7f080006;
+        public static final int gpaCalculator=0x7f080000;
+        public static final int gradeLayout=0x7f080007;
+        public static final int hoursLayout=0x7f08000a;
+        public static final int nameLayout=0x7f080004;
+        public static final int viewClasses=0x7f080002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -39,21 +51,18 @@ public final class R {
         public static final int main=0x7f070000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int add_class=0x7f050003;
-        public static final int add_grade=0x7f05000e;
-        public static final int add_semester=0x7f050005;
+        public static final int action_settings=0x7f050002;
+        public static final int add=0x7f05000b;
+        public static final int add_class=0x7f050004;
         public static final int app_name=0x7f050000;
-        public static final int back=0x7f05000d;
-        public static final int calculate=0x7f050002;
-        public static final int cancel=0x7f050008;
-        public static final int class_name=0x7f050006;
-        public static final int courses=0x7f05000c;
-        public static final int hours=0x7f050007;
-        public static final int new_course=0x7f05000b;
-        public static final int submit=0x7f050009;
-        public static final int view_gpa=0x7f050004;
-        public static final int weight=0x7f05000a;
+        public static final int calculate=0x7f050003;
+        public static final int cancel=0x7f05000a;
+        public static final int class_grade=0x7f050006;
+        public static final int class_hours=0x7f050007;
+        public static final int class_name=0x7f050008;
+        public static final int courses=0x7f050009;
+        public static final int gpa_calculator=0x7f050001;
+        public static final int view_classes=0x7f050005;
     }
     public static final class style {
         /** 

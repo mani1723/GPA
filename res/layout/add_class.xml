@@ -4,5 +4,90 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+		<TextView
+            android:id="@+id/addClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_class"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		<LinearLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
 
+            <TextView
+                android:id="@+id/className"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/class_name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/classNameTextField"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        
+		<LinearLayout
+            android:id="@+id/gradeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/classGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/class_grade"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/classGradeTextField"
+                android:layout_width="0dp"
+       			android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        
+		<LinearLayout
+            android:id="@+id/hoursLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/classHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/class_hours"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/classHoursTextField"
+                android:layout_width="0dp"
+       			android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        
+		<LinearLayout 
+		    android:id="@+id/addCourseButtons"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+		    
+		    <Button
+                    android:id="@+id/Cancel"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel" />
+		   	
+		   	<Button
+                    android:id="@+id/Add"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add" />
+		</LinearLayout>
+	
 </LinearLayout>
