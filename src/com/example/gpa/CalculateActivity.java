@@ -1,13 +1,16 @@
 package com.example.gpa;
 
-public class CalculateActivity {
+import android.app.Activity;
+import android.os.Bundle;
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class CalculateActivity extends Activity {
 
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
 	}
 
 }

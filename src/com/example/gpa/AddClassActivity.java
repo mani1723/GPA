@@ -8,11 +8,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class AddClassActivity extends Activity implements View.OnClickListener {
 
-	Button cancel, add;
-	EditText name, grade, hours;
+	Button cancel = null;
+	Button add = null;
+	TextView name = null;
+	TextView grade = null;
+	TextView hours = null;
+	
+	EditText _etName = null;
+	EditText _etgrade = null;
+	EditText _ethours = null;
+	
 	Class classObj;
 	Scale scale;
 	AlertDialog errorMessage;
@@ -78,11 +88,18 @@ public class AddClassActivity extends Activity implements View.OnClickListener {
 
 	public void initialize() {
 		cancel = (Button) findViewById(R.id.Cancel);
+		cancel.setOnClickListener(AddClassActivity.this);
 		add = (Button) findViewById(R.id.Add);
-		name = (EditText) findViewById(R.id.className);
-		grade = (EditText) findViewById(R.id.classGrade);
-		hours = (EditText) findViewById(R.id.classHours);
+		add.setOnClickListener(AddClassActivity.this);
+		
+		name = (TextView) findViewById(R.id.className);
+		grade = (TextView) findViewById(R.id.classGrade);
+		hours = (TextView) findViewById(R.id.classHours);
 
+		_etName = (EditText)findViewById(R.id.classNameTextField);
+		_etgrade = (EditText)findViewById(R.id.classGradeTextField);
+		_ethours = (EditText)findViewById(R.id.classHoursTextField);
+		
 		classSource = new ClassDataSource(this);
 
 		cancel.setOnClickListener(this);
@@ -106,9 +123,16 @@ public class AddClassActivity extends Activity implements View.OnClickListener {
 
 		Class classObj = new Class();
 
-		classObj.setName(name.getText().toString());
-		classObj.setGrade(Integer.parseInt(grade.getText().toString().trim()));
-		classObj.setHours(Integer.parseInt(hours.getText().toString().trim()));
+		classObj.setName(_etName.getText().toString());
+		
+		try {
+			classObj.setGrade(Integer.parseInt(_etgrade.getText().toString().trim()));
+			classObj.setHours(Integer.parseInt(_ethours.getText().toString().trim()));
+		} catch (NumberFormatException e) {
+			Toast.makeText(AddClassActivity.this, "Exception", Toast.LENGTH_SHORT).show();
+			e.printStackTrace();
+		}
+		
 
 		// Add grading scale
 		classObj.setScale(scale);
@@ -119,3 +143,6 @@ public class AddClassActivity extends Activity implements View.OnClickListener {
 		classSource.close();
 	}
 }
+
+
+	

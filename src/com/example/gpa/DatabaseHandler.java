@@ -28,11 +28,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	
 	private static final String CLASS_TABLE_CREATE = 
 			"CREATE TABLE " + classesTable + 
-			" (" +
-			classID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+			" (" +classID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
 			className + " TEXT NOT NULL," +
 			classGrade + " INTEGER NOT NULL, " +
-			classHours + " INTEGER NOT NULL" +
+			classHours + " INTEGER NOT NULL," +
 			A + " INTEGER NOT NULL," +
 			A_minus + " INTEGER, " +
 			B_plus + " INTEGER, " +

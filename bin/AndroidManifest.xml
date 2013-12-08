@@ -24,7 +24,7 @@
         </activity>
         <activity android:name="AddClassActivity"></activity>
         <activity android:name="ViewClassesActivity"></activity>
-        <activity android:name="Calculate"></activity>
+        <activity android:name="CalculateActivity"></activity>
     </application>
 
 </manifest>
