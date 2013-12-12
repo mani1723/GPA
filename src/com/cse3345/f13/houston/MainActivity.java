@@ -1,5 +1,7 @@
 package com.cse3345.f13.houston;
 
+import java.util.List;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,13 +12,16 @@ import android.widget.Button;
 public class MainActivity extends Activity implements View.OnClickListener {
 
 	Button calculateGPA, viewClasses, addClass ;
+	ClassDataSource source;
+	List<Class> classList;
+	int gpa = 0;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		initialize();
-		calculate();
+		//calculate();
 	}
 
     @Override
@@ -59,8 +64,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	
 	public void calculate() {
 		
-		
-		
+		source.open();
+		classList = source.getAllClasses();
+		int tempGrade = 0;
+		for (int i = 0; i < classList.size(); ++i){
+			tempGrade = classList.get(i).getGrade();
+			System.out.println("TEMP GRADE: " + tempGrade);
+		}
+		source.close();
+
 	}
 
 }

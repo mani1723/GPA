@@ -29,11 +29,12 @@ public final class R {
     public static final class id {
         public static final int Add=0x7f0a000f;
         public static final int Cancel=0x7f0a000e;
-        public static final int action_settings=0x7f0a0015;
+        public static final int action_settings=0x7f0a001d;
         public static final int addClass=0x7f0a0001;
         public static final int addCourseButtons=0x7f0a000d;
-        public static final int add_class=0x7f0a0013;
-        public static final int back=0x7f0a0014;
+        public static final int add_class=0x7f0a001a;
+        public static final int back=0x7f0a001c;
+        public static final int btn_back=0x7f0a0015;
         public static final int calculate=0x7f0a0003;
         public static final int classGrade=0x7f0a0008;
         public static final int classGradeTextField=0x7f0a0009;
@@ -41,13 +42,20 @@ public final class R {
         public static final int classHoursTextField=0x7f0a000c;
         public static final int className=0x7f0a0005;
         public static final int classNameTextField=0x7f0a0006;
+        public static final int content=0x7f0a0010;
+        public static final int coursetitle=0x7f0a0011;
+        public static final int currentaverage=0x7f0a0012;
+        public static final int delete_class=0x7f0a001b;
         public static final int gpaCalculator=0x7f0a0000;
         public static final int gradeLayout=0x7f0a0007;
         public static final int hoursLayout=0x7f0a000a;
-        public static final int linearLayout1=0x7f0a0010;
-        public static final int linearLayout2=0x7f0a0011;
+        public static final int layout_weights=0x7f0a0013;
+        public static final int linearLayout1=0x7f0a0016;
+        public static final int linearLayout2=0x7f0a0017;
+        public static final int linearLayout3=0x7f0a0019;
         public static final int nameLayout=0x7f0a0004;
-        public static final int textView1=0x7f0a0012;
+        public static final int textView1=0x7f0a0018;
+        public static final int typelayout=0x7f0a0014;
         public static final int viewClasses=0x7f0a0002;
     }
     public static final class integer {
@@ -58,28 +66,30 @@ public final class R {
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int add_class=0x7f030001;
-        public static final int view_class=0x7f030002;
+        public static final int individualcourse=0x7f030002;
+        public static final int view_class=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f090000;
     }
     public static final class string {
         public static final int action_settings=0x7f070002;
-        public static final int add=0x7f07000b;
+        public static final int add=0x7f07000c;
         public static final int add_class=0x7f070004;
         public static final int app_name=0x7f070000;
-        public static final int back=0x7f07000c;
+        public static final int back=0x7f07000d;
         public static final int calculate=0x7f070003;
-        public static final int cancel=0x7f07000a;
-        public static final int class_grade=0x7f070006;
-        public static final int class_hours=0x7f070007;
-        public static final int class_name=0x7f070008;
-        public static final int classes=0x7f07000d;
-        public static final int courses=0x7f070009;
-        public static final int developer_name=0x7f07000f;
+        public static final int cancel=0x7f07000b;
+        public static final int class_grade=0x7f070007;
+        public static final int class_hours=0x7f070008;
+        public static final int class_name=0x7f070009;
+        public static final int classes=0x7f07000e;
+        public static final int courses=0x7f07000a;
+        public static final int delete_class=0x7f070005;
+        public static final int developer_name=0x7f070010;
         public static final int gpa_calculator=0x7f070001;
-        public static final int list=0x7f07000e;
-        public static final int view_classes=0x7f070005;
+        public static final int list=0x7f07000f;
+        public static final int view_classes=0x7f070006;
     }
     public static final class style {
         /** 

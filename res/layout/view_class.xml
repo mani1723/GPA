@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -21,27 +20,40 @@
                 android:layout_height="wrap_content"
                 android:text="@string/classes"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
-
         </LinearLayout>
 
         <ListView
             android:id="@+id/viewClasses"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp">
         </ListView>
 
-        <Button
-            android:id="@+id/add_class"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/add_class" />
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/back" />
+            <Button
+                android:id="@+id/add_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_class" />
 
+            <Button
+                android:id="@+id/delete_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_class" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back" />
+            
+        </LinearLayout>
     </LinearLayout>
-    
+
 </LinearLayout>
