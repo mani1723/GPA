@@ -47,8 +47,6 @@ View.OnClickListener {
 		addClass.setOnClickListener(this);
 		back = (Button) findViewById(R.id.back);
 		back.setOnClickListener(this);
-		deleteClass = (Button)findViewById(R.id.delete_class);
-		deleteClass.setOnClickListener(this);
 		list = (ListView) findViewById(R.id.viewClasses);
 
 		source = new ClassDataSource(this);
@@ -84,9 +82,6 @@ View.OnClickListener {
 			break;
 		case R.id.back:
 			finish();
-			break;
-		case R.id.delete_class:
-
 			break;
 		}
 

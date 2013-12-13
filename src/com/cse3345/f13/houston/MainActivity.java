@@ -1,22 +1,27 @@
 package com.cse3345.f13.houston;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
 	Button calculateGPA, viewClasses, addClass ;
-	
+	AlertDialog errorMessage;
+
 	private ArrayList<String> listOfGrades = null;
-	double [] grades = null;
+	//double [] grades = null;
 
 	//private List<Double> grades = new ArrayList<Double>();
 
@@ -113,7 +118,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		
 		System.out.println("YOUR GPA IS: " + actualGPA);
 		classSource.close();
+		
+		DecimalFormat twoDForm = new DecimalFormat("#.##");
+		twoDForm.setRoundingMode(RoundingMode.UP);
 
+		Toast.makeText(getApplicationContext(), 
+				"Your GPA is: " + twoDForm.format(actualGPA),
+				Toast.LENGTH_LONG).show();
 	}
 
 	public double getLetterGrade(double e){

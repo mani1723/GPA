@@ -29,11 +29,11 @@ public final class R {
     public static final class id {
         public static final int Add=0x7f0a000f;
         public static final int Cancel=0x7f0a000e;
-        public static final int action_settings=0x7f0a001d;
+        public static final int action_settings=0x7f0a001c;
         public static final int addClass=0x7f0a0001;
         public static final int addCourseButtons=0x7f0a000d;
         public static final int add_class=0x7f0a001a;
-        public static final int back=0x7f0a001c;
+        public static final int back=0x7f0a001b;
         public static final int btn_back=0x7f0a0015;
         public static final int calculate=0x7f0a0003;
         public static final int classGrade=0x7f0a0008;
@@ -45,7 +45,6 @@ public final class R {
         public static final int content=0x7f0a0010;
         public static final int coursetitle=0x7f0a0011;
         public static final int currentaverage=0x7f0a0012;
-        public static final int delete_class=0x7f0a001b;
         public static final int gpaCalculator=0x7f0a0000;
         public static final int gradeLayout=0x7f0a0007;
         public static final int hoursLayout=0x7f0a000a;
