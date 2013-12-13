@@ -86,29 +86,19 @@ public class MainActivity extends Activity implements View.OnClickListener {
         double[] hours = new double[classList.size()];
 		for (int i = 0; i < classList.size(); i++) {
 			classList.get(i).getId();
-		//String grade = ""+classList.get(i).getCourseCurrentGrade(classList.get(i).getGrade(),getLetterGrade(classList.get(i).getGrade()));
-		double grade = classList.get(i).getGrade();
-		double hour = classList.get(i).getHours();
-		
-		
-		tempGPA = getLetterGrade(grade);
-		totalGPA += tempGPA;
-		totalHours += hour;
-
-		//grades.add(grade);
-		grades[i] = tempGPA;
-		//hours.add(hour);
-		hours[i] = hour;
-		//System.out.println(grades[i]);
+			double grade = classList.get(i).getGrade();
+			double hour = classList.get(i).getHours();
+			
+			tempGPA = getLetterGrade(grade);
+			totalGPA += tempGPA;
+			totalHours += hour;
+			grades[i] = tempGPA;
+			hours[i] = hour;
 
 		}
-//		_etName.setText(selectedClassInfo.getName().toString());
-//		_etgrade.setText(""+selectedClassInfo.getGrade());
-//		_ethours.setText(""+selectedClassInfo.getHours());
-		
+
 		double actualGPA = 0;
 		for (int i = 0; i < classList.size(); i++) {
-			//classList.get(i).getId();
 			
 			double tempGPA2 = grades[i];
 			double tempHoursPercent = hours[i]/totalHours;

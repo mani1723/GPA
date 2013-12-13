@@ -48,27 +48,8 @@ View.OnClickListener {
 		back = (Button) findViewById(R.id.back);
 		back.setOnClickListener(this);
 		list = (ListView) findViewById(R.id.viewClasses);
-
 		source = new ClassDataSource(this);
 		updateList();
-	}
-
-	@Override
-	public void onCreateContextMenu(ContextMenu menu, View view,
-			ContextMenuInfo menuInfo) {
-
-		/*if (view.getId() == R.id.viewClasses) {
-			AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
-
-			menu.setHeaderTitle(classList.get(info.position).getName());
-
-			String[] classMenu = getResources().getStringArray(R.array.menu);
-
-			for (int i = 0; i < classMenu.length; i++) {
-				menu.add(Menu.NONE, i, i, classMenu[i]);
-			}
-
-		}*/
 	}
 
 	@Override
@@ -113,17 +94,6 @@ View.OnClickListener {
 		String menuItemName = classMenu[menuItemIndex];
 		int listItemId = classList.get(info.position).getId();
 
-		Intent i;
-		if (menuItemName.equals("Edit")) {
-			// TODO Move to course edit
-			System.out.println("Edit course");
-		}
-		//if (menuItemName.equals("Delete")) {
-		//	System.out.println("Delete course");
-		//	i = new Intent(this, DeleteClassActivity.class);
-		//	i.putExtra("id", listItemId);  //TODO possibly convert to tags instead of extras
-		//	startActivityForResult(i, R.integer.COURSE_DELETE);
-		//}
 		System.out.println(String.format("Selected %s for item %s",
 				menuItemName, listItemId));
 		return true;
