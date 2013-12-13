@@ -45,7 +45,6 @@ public class EditClassActivity extends Activity implements View.OnClickListener 
                 initialize();
                 
                 classSource.open();
-//                classList = classSource.getAllClasses();
                 selectedClassInfo = classSource.getClassByID(classId);
                 _etName.setText(selectedClassInfo.getName().toString());
                 _etgrade.setText(""+selectedClassInfo.getGrade());
@@ -58,12 +57,7 @@ public class EditClassActivity extends Activity implements View.OnClickListener 
                 classSource.close();
         }
         @Override
-        // This is an onClick method that is called when one of the buttons is
-        // clicked.
-
         public void onClick(View view) {
-                // This is the switch case which picks the button that was pressed by
-                // its id.
                 switch (view.getId()) {
 
                 case R.id.Cancel:
@@ -118,14 +112,12 @@ public class EditClassActivity extends Activity implements View.OnClickListener 
         private boolean validateClass() {
                 String errors = "You have made the following error(s): \n";
                 boolean inputError = false;
-                // ensure dept abbreviation is not blank
 
                 if (name.getText().toString().length() == 0) {
                         errors += "-Class name cannot be left blank.\n";
                         inputError = true;
                 }
 
-                // ensure classObj number is not blank
                 if (grade.getText().toString().length() == 0) {
                         errors += "-Grade percentage cannot be left blank.\n";
                         inputError = true;

@@ -124,10 +124,6 @@ public class ClassDataSource {
 
         }
 
-        /**
-         * @param ClassID the id of the Class being returned
-         * @return the Class associated with the id
-         */
         public Class getClassByID(int ClassID){
                 Class Class = new Class();
                 Cursor cursor = db.query(DatabaseHandler.classesTable, columns,
