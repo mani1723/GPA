@@ -87,13 +87,14 @@ public class Class implements Parcelable{
 
 	};
 	
-	public String getCourseCurrentGrade(){
+	public String getCourseCurrentGrade( double grade, String letterGrade){
 		// TODO Algorithms
-		double avg = getGrade();
+//		double avg = getGrade();
+		double avg = grade;
 		if(avg > -1){
 			BigDecimal trimmedAvg = new BigDecimal(avg);
 			trimmedAvg = trimmedAvg.setScale(2, BigDecimal.ROUND_UP);
-			return "Grade: " + trimmedAvg + " % " + scale.getLetterGrade(avg);
+			return "Grade: " + trimmedAvg + " % " + letterGrade;
 		}
 		else{
 			return "Grade: N/A";

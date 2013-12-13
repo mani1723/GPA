@@ -47,10 +47,15 @@ public class EditClassActivity extends Activity implements View.OnClickListener 
 		classSource.open();
 //		classList = classSource.getAllClasses();
 		selectedClassInfo = classSource.getClassByID(classId);
-		
+		Scale scale = new Scale();
 		_etName.setText(selectedClassInfo.getName().toString());
 		_etgrade.setText(""+selectedClassInfo.getGrade());
 		_ethours.setText(""+selectedClassInfo.getHours());
+		String grade = ""+selectedClassInfo.getGrade();
+		Toast.makeText(EditClassActivity.this, 
+				""+selectedClassInfo.getCourseCurrentGrade(selectedClassInfo.getGrade(),
+						scale.getLetterGrade(selectedClassInfo.getGrade())),
+				Toast.LENGTH_LONG).show();
 		classSource.close();
 	}
 	@Override
