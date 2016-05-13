@@ -42,7 +42,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
 	@Override
 	public void onClick(View view) {
-		Intent i;
+		
 
 		switch(view.getId()) {
 		case R.id.addClass:
